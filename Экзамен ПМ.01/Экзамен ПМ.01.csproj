@@ -46,17 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="_Экзамен_ПМ_01_ПекинDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Экзамен_ПМ_01_ПекинDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ГлавноеОкно.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ГлавноеОкно.Designer.cs">
+      <DependentUpon>ГлавноеОкно.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Заказ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Заказ.Designer.cs">
+      <DependentUpon>Заказ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="КаталогКниг.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="КаталогКниг.Designer.cs">
+      <DependentUpon>КаталогКниг.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Корзина.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Корзина.Designer.cs">
+      <DependentUpon>Корзина.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -67,6 +87,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ГлавноеОкно.resx">
+      <DependentUpon>ГлавноеОкно.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Заказ.resx">
+      <DependentUpon>Заказ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="КаталогКниг.resx">
+      <DependentUpon>КаталогКниг.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Корзина.resx">
+      <DependentUpon>Корзина.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -76,12 +108,32 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_Экзамен_ПМ_01_ПекинDataSet.xsc">
+      <DependentUpon>_Экзамен_ПМ_01_ПекинDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Экзамен_ПМ_01_ПекинDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Экзамен_ПМ_01_ПекинDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Экзамен_ПМ_01_ПекинDataSet.xss">
+      <DependentUpon>_Экзамен_ПМ_01_ПекинDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Файлы\База.xlsx.xls" />
+    <None Include="Файлы\Тестирование функционала.docx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Долгая прогулка.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Красношейка.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Файлы\dbo.Книги.Table.sql" />
+    <Content Include="Файлы\Экзамен-ПМ.01-Пекин.Database.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
